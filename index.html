@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YT Factory — personal YouTube automation tool</title>
+<meta name="description" content="YT Factory is a personal tool that prepares and uploads videos to its owner's own YouTube channel.">
+<style>
+:root{--bg:#fff;--fg:#1c1e21;--mut:#5b6068;--card:#f4f5f7;--line:#dcdfe4;--acc:#c4302b}
+@media (prefers-color-scheme:dark){:root{--bg:#15171a;--fg:#e9eaec;--mut:#9aa0a8;--card:#1f2226;--line:#32363c;--acc:#ff6b64}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 20px 64px}
+h1{font-size:2rem;margin:0 0 .25em}h2{font-size:1.25rem;margin:1.8em 0 .4em}
+p,li{color:var(--fg)}.mut{color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0}
+a{color:var(--acc)}nav a{margin-right:16px}hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+footer{margin-top:48px;color:var(--mut);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ru">Русский</a><a href="#en">English</a><a href="privacy.html">Privacy Policy / Политика конфиденциальности</a><a href="terms.html">Terms / Условия</a></nav>
+
+<section id="ru">
+<h1>YT Factory</h1>
+<p class="mut">Личный инструмент автоматизации для подготовки и загрузки видео на собственный YouTube-канал.</p>
+<div class="card">
+<p><strong>Что это.</strong> YT Factory — приложение для ПК, которым пользуется только его владелец. Оно готовит видеоролики (сценарий, озвучка, монтаж) и по команде владельца загружает их на его собственный канал YouTube через YouTube Data API, а также читает статистику этого канала через YouTube Analytics API.</p>
+<p><strong>Кто пользуется.</strong> Только владелец канала. Приложение не предназначено для публичного использования, не регистрирует других пользователей и не собирает их данные.</p>
+</div>
+<h2>Доступ к данным Google</h2>
+<ul>
+<li><code>youtube.upload</code> — загрузка видео на канал владельца;</li>
+<li><code>youtube.force-ssl</code> — изменение названия, описания и настроек доступа собственных видео;</li>
+<li><code>yt-analytics.readonly</code> — просмотр статистики собственного канала.</li>
+</ul>
+<p>Подробности — в <a href="privacy.html#ru">Политике конфиденциальности</a> и <a href="terms.html#ru">Условиях использования</a>.</p>
+<p>Связь с владельцем: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>YT Factory</h1>
+<p class="mut">A personal automation tool that prepares videos and uploads them to its owner's own YouTube channel.</p>
+<div class="card">
+<p><strong>What it is.</strong> YT Factory is a desktop application used only by its owner. It prepares video files (script, voice-over, editing) and, on the owner's command, uploads them to the owner's own YouTube channel through the YouTube Data API. It also reads statistics of that channel through the YouTube Analytics API.</p>
+<p><strong>Who uses it.</strong> Only the channel owner. The application is not offered to the public, does not register other users and does not collect their data.</p>
+</div>
+<h2>Google data access</h2>
+<ul>
+<li><code>youtube.upload</code> — upload videos to the owner's channel;</li>
+<li><code>youtube.force-ssl</code> — edit the title, description and visibility of the owner's own videos;</li>
+<li><code>yt-analytics.readonly</code> — view analytics of the owner's own channel.</li>
+</ul>
+<p>See the <a href="privacy.html#en">Privacy Policy</a> and the <a href="terms.html#en">Terms of Service</a> for details.</p>
+<p>Contact: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+</section>
+
+<footer>
+<p>YT Factory uses YouTube API Services. By using it you are also bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>© 2026 YT Factory · {{DOMAIN}}</p>
+</footer>
+</main>
+</body>
+</html>
